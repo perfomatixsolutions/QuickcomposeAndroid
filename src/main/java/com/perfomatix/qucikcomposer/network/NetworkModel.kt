@@ -1,0 +1,71 @@
+package com.perfomatix.qucikcomposer.network
+
+data class ResponseErrorBody(
+    val  statusCode : String ?,
+    val  message : String ?
+
+)
+
+data class ResponseError(
+    val  error : ResponseErrorBody?
+)
+/*data class SuccessResponse<T>(
+)
+
+enum class ResponseTypeDetails{
+    //100
+    TEMPORARY_CONTINUE, //100
+    TEMPORARY_SWITCHING_PROTOCOLS, //101
+    TEMPORARY_PROCESSING, //102
+    //200
+    SUCCESS_OK, //200
+    SUCCESS_CREATED, //201
+    SUCCESS_ACCEPTED, //202
+    SUCCESS_NON_AUTH_INFO, //203
+    SUCCESS_NO_CONTENT, //204
+    SUCCESS_RESET_CONTENT, //205
+    SUCCESS_PARTIAL_CONTENT, //206
+    SUCCESS_MULTI_STATUS, //207
+    SUCCESS_ALREADY_REPORTED, //208
+    SUCCESS_IM_USED, //226
+    //300
+    REDIRECTION_MULTIPLE_CHOICE, //300
+    REDIRECTION_MOVED_PERMANENTLY, //301
+    REDIRECTION_FOUND, //302
+    REDIRECTION_CHECK_OTHER, //303
+    REDIRECTION_NOT_MODIFIED, //304
+    REDIRECTION_USE_PROXY, //305
+    REDIRECTION_SWITCH_PROXY, //306
+    REDIRECTION_TEMPORARY_REDIRECT, //307
+    REDIRECTION_PERMANENT_REDIRECT, //308
+    //400
+    CLIENT_ERROR_BAD_REQUEST,
+    CLIENT_ERROR_UNAUTHORISED,
+    CLIENT_ERROR_PAYMENT_REQUIRED,
+    CLIENT_ERROR_FORBIDDEN,
+    CLIENT_ERROR_NOT_FOUND,
+    CLIENT_ERROR_METHOD_NOT_ALLOWED,
+    CLIENT_ERROR_NOT_ACCEPTABLE,
+    CLIENT_ERROR_PROXY_AUTHENTICATION_REQUIRED,
+    CLIENT_ERROR_REQUEST_TIMEOUT,
+    CLIENT_ERROR_CONFLICT,
+    CLIENT_ERROR_GONE,
+    CLIENT_ERROR_LENGTH_REQUIRED,
+    CLIENT_ERROR_PRECONDITION_FAILED,
+    CLIENT_ERROR_Payload Too Large
+    CLIENT_ERROR_URI Too Long
+    CLIENT_ERROR_Unsupported Media Type
+    CLIENT_ERROR_Range Not Satisfiable
+    CLIENT_ERROR_Expectation Failed
+    CLIENT_ERROR_I’m a teapot
+    CLIENT_ERROR_Misdirected Request
+    CLIENT_ERROR_Unprocessable Entity
+    CLIENT_ERROR_Locked
+    CLIENT_ERROR_Failed Dependency
+    CLIENT_ERROR_Upgrade Required
+    CLIENT_ERROR_Precondition Required
+    CLIENT_ERROR_Too Many Requests
+    CLIENT_ERROR_Request Header Fields Too Large
+    CLIENT_ERROR_Unavailable For Legal Reasons
+}*/
+
